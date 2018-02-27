@@ -1,0 +1,7 @@
+---
+post:
+- !ruby/struct:Posts
+  message: HELLO!
+  name: Anonymus
+greeting:
+  Stored: contents
