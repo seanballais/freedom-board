@@ -21,21 +21,28 @@
                 <form id="form-bait" class="form-group">
                     <input type="text" class="form-control" id="inputMessage" placeholder="Write a message...">
                 </form>
-                <form id="form-writer" class="form-group">
+                <form id="form-writer" class="form-group" method="post" action="/post">
                     <div class="form-group-row">
                         <label for="inputMessage" class="col-form-label">Your message</label>
                         <div>
-                            <textarea class="form-control" id="inputMessage" placeholder="The one you want to say..." rows="5"></textarea>
+                            <textarea name="message" class="form-control" id="inputMessage" placeholder="The one you want to say..." rows="5" required></textarea>
                         </div>
                     </div>
                     <div class="form-group-row">
                         <label for="inputAuthor" class="col-form-label">Your name</label>
                         <div>
-                            <input type="text" class="form-control" id="inputAuthor" placeholder="Not the anime, but... your name.">
+                            <input type="text" name="author" class="form-control" id="inputAuthor" placeholder="Not the anime, but... your name." required>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary message-submit">Write message</button>
                 </form>
+            </div>
+            <div id="posts">
+                <% @posts.each do |_, data| %>
+                    <div class="post-item">
+                        <p><%= data %></p>
+                    </div>
+                <% end %>
             </div>
         </div>
     </article>

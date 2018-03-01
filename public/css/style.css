@@ -35,11 +35,23 @@ article div#article-contents {
 
     border-radius: 10px;
     border: solid 1px rgb(165, 165, 165);
+    padding: 0;
+}
+
+article div#article-contents div > * {
+    margin: 0;
+}
+
+article div#article-contents div {
     padding: 1%;
 }
 
 article div#article-contents div#message-writer form#form-writer {
     display: none;
+}
+
+article div#article-contents div#posts {
+    border-top: solid 1px rgb(165, 165, 165);
 }
 
 div#floating-message-textbox, div#floating-message-textbox-trigger {
