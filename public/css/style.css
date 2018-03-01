@@ -1,0 +1,64 @@
+html, body {
+    margin: 0;
+    max-width: 100%;
+
+    background-color: rgb(221, 221, 221);
+}
+
+header {
+    text-align: center;
+    margin: 2%;
+}
+
+header h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+div#floating-message-textbox, div#floating-message-textbox-trigger {
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    z-index: 10;
+
+    border: 5px solid #5701b8;
+    box-shadow: 5px 5px #6e6b67;
+    background-color: white;
+
+    padding: 1%;
+}
+
+div#floating-message-textbox {
+    display: none;
+}
+
+div#floating-message-textbox h3 {
+    font-weight: lighter;
+    width: 100%;
+}
+
+div#floating-message-textbox h3 span {
+    float: right;
+
+    font-weight: bolder;
+
+    cursor: pointer;
+}
+
+div#floating-message-textbox form button {
+    margin-top: 3%;
+}
+
+div#floating-message-textbox-trigger {
+    font-size: 2em;
+    width: initial;
+    margin-bottom: 2%;
+
+    background-color: #5701b8;
+    cursor: pointer;
+}
