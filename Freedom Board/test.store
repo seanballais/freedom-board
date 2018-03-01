@@ -1,0 +1,11 @@
+---
+post: !ruby/struct:Posts
+  message: ''
+  name: ''
+greeting:
+  Stored: contents
+G:
+  Stored: contents
+Freedom Board: !ruby/struct:Posts
+  message: ''
+  name: ''
