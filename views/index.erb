@@ -40,7 +40,8 @@
             <div id="posts">
                 <% @posts.each do |_, data| %>
                     <div class="post-item">
-                        <p><%= data %></p>
+                        <h5><%= data[:author] %><span class="time-posted"><%= data[:time_posted] %></span></h5>
+                        <p><%= data[:message] %></p>
                     </div>
                 <% end %>
             </div>

@@ -50,6 +50,24 @@ article div#article-contents div#message-writer form#form-writer {
     display: none;
 }
 
+article div#article-contents div#posts div.post-item h5 {
+    font-weight: bold;
+    text-align: left;
+
+    margin-bottom: 1%;
+}
+
+article div#article-contents div#posts div.post-item h5 span {
+    font-weight: 200;
+
+    float: right;
+}
+
+article div#article-contents div#posts div.post-item p {
+    font-size: 1.45em;
+    font-weight: 400;
+}
+
 article div#article-contents div#posts {
     border-top: solid 1px rgb(165, 165, 165);
 }
