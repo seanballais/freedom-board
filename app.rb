@@ -20,7 +20,7 @@ post '/post' do
     store = YAML::Store.new 'posts.yaml'
     store.transaction do
         post_hash = FNV.new.fnv1a_64(author + message)
-        store['posts'] = {}
+        store['posts'] ||= {}
         store['posts'][post_hash] = {}
         store['posts'][post_hash][:author] = author
         store['posts'][post_hash][:message] = message

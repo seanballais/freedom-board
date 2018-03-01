@@ -24,6 +24,17 @@ header p {
     font-weight: lighter;
 }
 
+header p a {
+    color: rgb(0, 63, 122);
+
+    transition: all ease-in 0.5s;
+}
+
+header p a:hover {
+    color: rgb(0, 112, 216);
+    text-decoration: none;
+}
+
 article h5 {
     font-weight: light;
 
@@ -68,7 +79,7 @@ article div#article-contents div#posts div.post-item p {
     font-weight: 400;
 }
 
-article div#article-contents div#posts {
+article div#article-contents div#posts div.post-item {
     border-top: solid 1px rgb(165, 165, 165);
 }
 
