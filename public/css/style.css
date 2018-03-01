@@ -1,3 +1,7 @@
+.message-submit {
+    margin-top: 3%;
+}
+
 html, body {
     margin: 0;
     max-width: 100%;
@@ -20,17 +24,35 @@ header p {
     font-weight: lighter;
 }
 
+article h5 {
+    font-weight: light;
+
+    text-align: center;
+}
+
+article div#article-contents {
+    background-color: rgb(240, 240, 240);
+
+    border-radius: 10px;
+    border: solid 1px rgb(165, 165, 165);
+    padding: 1%;
+}
+
+article div#article-contents div#message-writer form#form-writer {
+    display: none;
+}
+
 div#floating-message-textbox, div#floating-message-textbox-trigger {
     position: absolute;
+    right: 0;
     bottom: 0;
-    width: 35%;
     z-index: 10;
 
     border: 5px solid #5701b8;
     box-shadow: 5px 5px #6e6b67;
     background-color: white;
 
-    padding: 1%;
+    padding: 4%;
 }
 
 div#floating-message-textbox {
@@ -57,7 +79,9 @@ div#floating-message-textbox form button {
 div#floating-message-textbox-trigger {
     font-size: 2em;
     width: initial;
-    margin-bottom: 2%;
+
+    margin-right: 7%;
+    margin-bottom: 7%;
 
     background-color: #5701b8;
     cursor: pointer;
