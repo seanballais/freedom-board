@@ -7,7 +7,7 @@ require 'date'
 require './models.rb'
 
 get '/' do
-    @posts = Posts.all
+    @posts = Posts.all.reverse_order
     erb :index
 end
 
