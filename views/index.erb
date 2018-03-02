@@ -39,11 +39,11 @@
                 </form>
             </div>
             <div id="posts">
-                <% @posts.each do |_, data| %>
+                <% @posts.each do |post| %>
                     <div class="post-item">
-                        <h5><%=h data[:author] %></h5>
-                        <h5 class="time-posted"><%= data[:time_posted] %></h5>
-                        <div class="message"><%= data[:message] %></div>
+                        <h5><%=h post.author %></h5>
+                        <h5 class="time-posted"><%= post.time_posted %></h5>
+                        <div class="message"><%= post.message %></div>
                     </div>
                 <% end %>
             </div>

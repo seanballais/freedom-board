@@ -3,7 +3,11 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'fnv'
 gem 'kramdown'
+gem 'pg'
+gem 'rake'
+gem 'sinatra-activerecord'
 
 group :development, :test do
-  gem "rerun"
+  gem 'sqlite3'
+  gem 'rerun'
 end
