@@ -16,7 +16,8 @@ end
 
 post '/post' do
     author = params['author']
-    message = Kramdown::Document.new(params['message']).to_html
+    message = Rack::Utils.escape_html(params['message'])
+    message = Kramdown::Document.new(message).to_html
 
     store = YAML::Store.new 'posts.yaml'
     store.transaction do

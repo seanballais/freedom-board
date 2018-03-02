@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('span.time-posted').each(function() {
+    $('h5.time-posted').each(function() {
         $(this).text(getDate(parseInt($(this).text())));
     });
 
