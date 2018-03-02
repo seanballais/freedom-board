@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem 'fnv'
 gem 'kramdown'
 gem 'pg'
 gem 'rake'
