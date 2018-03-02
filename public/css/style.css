@@ -35,6 +35,11 @@ header p a:hover {
     text-decoration: none;
 }
 
+article {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
 article h5 {
     font-weight: light;
 
@@ -114,6 +119,12 @@ article div#article-contents div#posts div.post-item div.message h5 {
 
 article div#article-contents div#posts div.post-item div.message h6 {
     font-size: 1.3em;
+}
+
+footer {
+    padding: 1%;
+
+    text-align: center;
 }
 
 div#floating-message-textbox, div#floating-message-textbox-trigger {
