@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'kramdown'
 require 'fnv'
 require 'yaml/store'
 require 'date'
@@ -15,7 +16,8 @@ end
 
 post '/post' do
     author = params['author']
-    message = params['message']
+    message = Rack::Utils.escape_html(params['message'])
+    message = Kramdown::Document.new(message).to_html
 
     store = YAML::Store.new 'posts.yaml'
     store.transaction do
@@ -28,4 +30,10 @@ post '/post' do
     end
 
     redirect '/'
+end
+
+helpers do
+    def h(text)
+        Rack::Utils.escape_html(text)
+    end
 end

@@ -68,10 +68,8 @@ article div#article-contents div#posts div.post-item h5 {
     margin-bottom: 1%;
 }
 
-article div#article-contents div#posts div.post-item h5 span {
+article div#article-contents div#posts div.post-item h5.time-posted {
     font-weight: 200;
-
-    float: right;
 }
 
 article div#article-contents div#posts div.post-item p {
@@ -81,10 +79,12 @@ article div#article-contents div#posts div.post-item p {
 
 article div#article-contents div#posts div.post-item {
     border-top: solid 1px rgb(165, 165, 165);
+
+    word-wrap: break-word;
 }
 
 div#floating-message-textbox, div#floating-message-textbox-trigger {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: 10;
