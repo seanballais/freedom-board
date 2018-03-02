@@ -73,14 +73,47 @@ article div#article-contents div#posts div.post-item h5.time-posted {
 }
 
 article div#article-contents div#posts div.post-item p {
-    font-size: 1.45em;
-    font-weight: 400;
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
 article div#article-contents div#posts div.post-item {
     border-top: solid 1px rgb(165, 165, 165);
 
     word-wrap: break-word;
+}
+
+article div#article-contents div#posts div.post-item div.message h1,
+article div#article-contents div#posts div.post-item div.message h2,
+article div#article-contents div#posts div.post-item div.message h3,
+article div#article-contents div#posts div.post-item div.message h4,
+article div#article-contents div#posts div.post-item div.message h5,
+article div#article-contents div#posts div.post-item div.message h6 {
+    font-weight: 500;
+}
+
+article div#article-contents div#posts div.post-item div.message h1 {
+    font-size: 1.75em;
+}
+
+article div#article-contents div#posts div.post-item div.message h2 {
+    font-size: 1.65em;
+}
+
+article div#article-contents div#posts div.post-item div.message h3 {
+    font-size: 1.55em;
+}
+
+article div#article-contents div#posts div.post-item div.message h4 {
+    font-size: 1.45em;
+}
+
+article div#article-contents div#posts div.post-item div.message h5 {
+    font-size: 1.35em;
+}
+
+article div#article-contents div#posts div.post-item div.message h6 {
+    font-size: 1.3em;
 }
 
 div#floating-message-textbox, div#floating-message-textbox-trigger {
